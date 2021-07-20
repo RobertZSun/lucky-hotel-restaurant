@@ -30,7 +30,7 @@
 ![login](https://img-blog.csdnimg.cn/20210720203658470.gif)
 
 商家在后台管理界面，查看顾客订单信息，同时更改订单完成状态，来更好的管理顾客订单
-![checkOrders](https://img-blog.csdnimg.cn/20210720203718757.gif)
+![checkOrders](https://img-blog.csdnimg.cn/20210720212029759.gif)
 
 ## 3. 安装说明
 
