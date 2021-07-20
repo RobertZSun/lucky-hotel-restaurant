@@ -1,0 +1,15 @@
+.meals-loading,
+.error {
+    margin: 50px auto;
+    max-width: 40rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.meals-loading {
+    color: black;
+}

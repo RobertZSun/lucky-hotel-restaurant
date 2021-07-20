@@ -1,0 +1,33 @@
+.meals {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+}
+
+
+.meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cuisine {
+    height: 66px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    border-bottom: 2px dotted white;
+    color: white;
+}
+
+@keyframes meals-appear {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

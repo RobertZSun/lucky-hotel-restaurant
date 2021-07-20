@@ -1,0 +1,10 @@
+.container {
+    height: 400px;
+}
+
+.inner-box {
+    height: 400px;
+    line-height: 400px;
+    font-size: 45px;
+    text-align:center;
+}
