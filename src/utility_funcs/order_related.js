@@ -1,8 +1,9 @@
 import axios from 'axios';
+const baseUrl = "your realtime database base url"
 
 async function getAllOrders() {
     let allYearsData;
-    const urlToFetch = "https://lucky-hotel-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json";
+    const urlToFetch = `${baseUrl}/orders.json`;
     try {
         const response = await axios.get(urlToFetch);
         if (response.status !== 200) {
@@ -20,7 +21,7 @@ async function getAllOrders() {
 async function getOrdersByYear(year) {
     let yearData;
 
-    const urlToFetch = `https://lucky-hotel-default-rtdb.asia-southeast1.firebasedatabase.app/orders/${year}.json`;
+    const urlToFetch = `${baseUrl}/orders/${year}.json`;
     try {
         const response = await axios.get(urlToFetch);
         if (response.status !== 200) {
@@ -49,7 +50,7 @@ async function getOrdersByYear(year) {
 async function getOrdersByYMDate(time) {
     let yearAndMonthAndDateData;
 
-    const urlToFetch = `https://lucky-hotel-default-rtdb.asia-southeast1.firebasedatabase.app/orders/${time}.json`;
+    const urlToFetch = `${baseUrl}/orders/${time}.json`;
     try {
         const response = await axios.get(urlToFetch);
         if (response.status !== 200) {
@@ -77,7 +78,7 @@ async function getOrdersByYMDate(time) {
 async function getOrdersByYMDHour(time) {
     let yearAndMonthAndDateAndHourData;
 
-    const urlToFetch = `https://lucky-hotel-default-rtdb.asia-southeast1.firebasedatabase.app/orders/${time}.json`;
+    const urlToFetch = `${baseUrl}/orders/${time}.json`;
     try {
         const response = await axios.get(urlToFetch);
         if (response.status !== 200) {

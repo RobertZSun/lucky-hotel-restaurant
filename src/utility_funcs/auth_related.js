@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAt6HRi3sketQyFJYLFcA5KB6R8IjyvrW8";
+const API_KEY = "your api key";
 
 
 async function signup(email, password) {

@@ -1,7 +1,9 @@
+const baseUrl = "your realtime database base url"
+
 async function checkCuisine(cuisine) {
     let allCuisines;
     let result = {existedId: false, cuisineDishes: {}};
-    const urlToFetch = 'https://lucky-hotel-default-rtdb.asia-southeast1.firebasedatabase.app/allMeals.json';
+    const urlToFetch = `${baseUrl}/allMeals.json`;
     try {
         const response = await fetch(urlToFetch, {method: 'get'}); // signal: signal
         if (!response.ok) {
@@ -33,7 +35,7 @@ async function checkCuisine(cuisine) {
 }
 
 async function createCuisines(cuisineName) {
-    const urlToFetch = 'https://lucky-hotel-default-rtdb.asia-southeast1.firebasedatabase.app/allMeals.json';
+    const urlToFetch = `${baseUrl}/allMeals.json`;
     const fetchConfig = {
         method: 'POST',
         body: JSON.stringify({
@@ -71,7 +73,7 @@ async function checkDish(cuisineInfo, dishName) {
 }
 
 async function addDish(cuisineId, dishInfo) {
-    let urlToPost = `https://lucky-hotel-default-rtdb.asia-southeast1.firebasedatabase.app/allMeals/${cuisineId}/dishes.json`;
+    let urlToPost = `${baseUrl}/allMeals/${cuisineId}/dishes.json`;
     let fetchConfig = {
         method: 'POST',
         body: JSON.stringify(dishInfo),
@@ -93,7 +95,7 @@ async function addDish(cuisineId, dishInfo) {
 }
 
 async function delDish(cuisineId, dishID) {
-    let urlToPost = `https://lucky-hotel-default-rtdb.asia-southeast1.firebasedatabase.app/allMeals/${cuisineId}/dishes/${dishID}.json`;
+    let urlToPost = `${baseUrl}/allMeals/${cuisineId}/dishes/${dishID}.json`;
     let fetchConfig = {
         method: 'DELETE',
     };

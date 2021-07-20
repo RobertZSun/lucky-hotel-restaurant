@@ -6,20 +6,20 @@ const columns = [
     {
         label: "菜品名称",
         prop: "name",
-        width: 425,
+        minWidth: 200,
         align: "left"
     },
     {
         label: "数量",
         prop: "amount",
         // width: 50
-        width: 70,
+        minWidth: 70,
         align: "center"
     },
     {
         label: "单价",
         prop: "price",
-        width: 70,
+        minWidth: 70,
         align: "center"
     }
 ];
