@@ -1,4 +1,4 @@
-# Lucky Restaurant
+# Lucky Restaurant [预览](https://lucky-hotel.web.app/meals)
 
 ---
 
